@@ -1,5 +1,6 @@
 package edu.kirkwood.view;
 
+import edu.kirkwood.controller.colman.SlopeCalculator;
 import edu.kirkwood.controller.issouf.RetirementCalculator;
 import edu.kirkwood.controller.marc.FractionCalculator;
 import edu.kirkwood.controller.ryan.LoanCalculator;
@@ -25,6 +26,7 @@ public class MainMenu {
             "Bailey's Astro OEV Calculator", 
             "Issouf's Retirement Calculator", 
             "Evan's Doomsday Calculator",
+            "Colman's Slope Calculator",
             "Quit"
           };
         while(true) {
@@ -54,6 +56,9 @@ public class MainMenu {
                     break;
                 case 8:
                     DoomsdayCalculatorController.start();
+                    break;
+                case 9:
+                    SlopeCalculator.start();
                     break;
                 default:
                     return;
